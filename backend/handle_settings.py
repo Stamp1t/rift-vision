@@ -2,14 +2,14 @@
 import os
 
 
-def write_data(riot_id, match_type, riot_api_key, obs_port, obs_password, scene):
+def write_data(riot_id, match_type, riot_api_key, obs_port, obs_password, scene, server):
     """ writes given data to the file """
 
     # preparing data for writing to the text file
     data = (
         f"RiotId: {riot_id}\nMatch Type: {match_type}\nRiot Games API Key: {riot_api_key}\n"
         f"OBS Server Port: {obs_port}\nOBS Server Password: {obs_password}\n"
-        f"Scene: {scene}\n"
+        f"Scene: {scene}\nServer: {server}"
     )
 
     # writing data to the text file
