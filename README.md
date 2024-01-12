@@ -27,7 +27,7 @@ To get started with Rift Vision, please follow these steps:
    - First, you need to download and install OBSWebSocket. It's a crucial component that enables real-time communication between OBS Studio and Rift Vision. You can download it [here](https://github.com/obsproject/obs-websocket/releases).
 
 2. **Download Rift Vision:**
-   - Next, download the Rift Vision application. You can download it [here](https://www.mediafire.com/file/6l6rv9ehxsiz0fn/Rift_Vision.zip/file)
+   - Next, download the Rift Vision application. You can download it [here](https://www.mediafire.com/file/52madd781qhtomk/RiftVision.zip/file)
    - Make sure to extract the files from the zip file to another folder.
 
 3. **Install OBS:**
@@ -51,3 +51,9 @@ After these settings are configured in OBS:
 After a few seconds, the overlay should be shown in OBS. You can adjust the size and position according to your preferences.
 
 *IMPORTANT:* You should always wait about 30 seconds after renewing your API Key and not start the program immediately. Also keep in mind to renew your API Key every 24 Hours because the Program will not work if the Key is outdated.
+
+## Important Notice regarding Anti Virus Software
+When running the software, you may encounter a notification from your antivirus program indicating that the executable file (.exe) has been blocked. This is a common occurrence with executable files that have not been digitally signed.
+Antivirus programs are designed to protect your system from potentially harmful applications. Unsigned executable files often trigger a security alert because, without a valid digital signature, the antivirus cannot verify the publisher of the software. As a precaution, the antivirus may prevent the file from running. In this case you will need to manually allow the exe file in your AntiVirus software.  
+I assure you that this program contains absolutely no malware or other harmful elements. The associated code is also publicly accessible here.
+
