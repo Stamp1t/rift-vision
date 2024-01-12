@@ -47,6 +47,7 @@ After these settings are configured in OBS:
    - **OBS Server Password:** Enter the password you set in OBS.
    - **Scene Name:** Enter the name of the OBS scene where you want to add the overlay.
 3. After entering all the required information, click 'Save' and start the program.
+4. Make sure that OBS is started whenever you start the program!
 
 After a few seconds, the overlay should be shown in OBS. You can adjust the size and position according to your preferences.
 
