@@ -27,7 +27,7 @@ To get started with Rift Vision, please follow these steps:
    - First, you need to download and install OBSWebSocket. It's a crucial component that enables real-time communication between OBS Studio and Rift Vision. You can download it [here](https://github.com/obsproject/obs-websocket/releases).
 
 2. **Download Rift Vision:**
-   - Next, download the Rift Vision application. You can download it [here](https://www.mediafire.com/file/52madd781qhtomk/RiftVision.zip/file)
+   - Next, download the Rift Vision application. You can download it [here](https://www.mediafire.com/file/26k4s2t33t7h1ng/Rift_Vision.zip/file)
    - Make sure to extract the files from the zip file to another folder.
 
 3. **Install OBS:**
