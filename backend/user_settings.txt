@@ -1,0 +1,6 @@
+RiotId: -
+Match Type: Ranked
+Riot Games API Key: -
+OBS Server Port: 4444
+OBS Server Password: -
+Scene: -

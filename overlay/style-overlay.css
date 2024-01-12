@@ -1,0 +1,178 @@
+#rank-overlay-duo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 175px; 
+    width: 290px;
+    padding-left: 5px;
+    padding-right: 100px;
+}
+#top-side-duo {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 1;
+}
+
+#player-name-duo {
+    width: 300px;
+}
+
+#right-side-duo-rank {
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+#rank-text-duo {
+    margin-top: 30px;
+    width: 200px;
+}
+
+#player-name-duo {
+    margin-bottom: 10px;
+}
+
+#bottom-side-duo{
+    margin-left: 25px;
+    width: 500px;
+    margin-top: 8px;
+}
+
+
+#rank-text-duo {
+    color: rgb(255, 255, 255);
+    font-family: "Bahnschrift Semibold", Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+
+#profile-link-duo {
+    color: rgb(255, 255, 255);
+    font-family: "Bahnschrift Semibold", Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    width: 500px;
+}
+
+#player-name-duo{
+
+    color: rgb(17, 11, 2);
+    font-family: "Bahnschrift Semibold", Helvetica, sans-serif;
+    font-size: 24px;
+
+}
+
+
+#session-overlay-duo {
+    color: rgb(255, 255, 255);
+    font-family: "Bahnschrift Semibold", Helvetica, sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: start;
+    align-items: start; 
+    height: 110px; 
+    width: 480px;
+    border-radius: 10px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-top-style: solid;
+    border-width: 5px;
+    border-top-color: rgba(12, 14, 54, 0.1);
+    background-color: rgba(13, 15, 36, 0.7);
+    
+}
+
+#session-stats-duo {
+    font-size: 17px;
+}
+
+#session-winrate-icon-duo {
+    font-size: 17px;
+}
+
+#left-side-duo-session {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 235px;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-left: 31px;
+}
+#right-side-duo-session {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 10px;
+    padding-top: 10px;
+    
+}
+
+#session-winrate-duo {
+    font-size: 35px;
+    padding-top: 10px;
+}
+
+#win-losses-duo {
+    font-size: 35px;
+    padding-top: 10px;
+
+}
+
+#wins-duo {
+    color: rgb(11, 218, 81);
+}
+#losses-duo {
+    color: rgb(220, 20, 60);
+}
+
+#perc-wr-duo {
+    color: rgb(11, 218, 81);
+}
+
+#overlay-duo {
+    display: flex ;
+    flex-direction: column;
+    width: 480px;
+    background: linear-gradient(
+        to bottom, 
+        rgba(60, 60, 85, 0.2) 0%, 
+        rgba(60, 60, 85, 0.3) 15%, 
+        rgba(60, 60, 85, 0.5) 30%, 
+        rgba(60, 60, 85, 0.6) 50%, 
+        rgba(10, 10, 17, 0.9) 100% 
+        
+    );
+   border-radius: 10px; 
+    
+}
+
+#overlay-duo-back {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    background: linear-gradient(
+        to bottom, 
+        rgba(60, 60, 85, 0.1) 0%, 
+        rgba(60, 60, 85, 0.3) 30%, 
+        rgba(27, 27, 41, 0.7) 60%, 
+        rgba(10, 10, 17, 0.9) 100%
+    );
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+#overlay-duo-back::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 10px 0 15px -10px rgba(10, 10, 17, 0.9),
+                -10px 0 15px -10px rgba(10, 10, 17, 0.9);
+    z-index: -1;
+}
