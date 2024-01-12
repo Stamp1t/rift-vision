@@ -13,7 +13,7 @@ def write_data(riot_id, match_type, riot_api_key, obs_port, obs_password, scene,
     )
 
     # writing data to the text file
-    with open(get_current_path()+"\\user_settings.txt", "w") as file:
+    with open(get_current_path()+"\\backend\\user_settings.txt", "w") as file:
         file.write(data)
 
 
@@ -21,7 +21,7 @@ def get_data():
     """ returns a dictionary containing all the data """
 
     result_dict = {}
-    with open(get_current_path()+"\\user_settings.txt", "r") as file:
+    with open(get_current_path()+"\\backend\\user_settings.txt", "r") as file:
         for line in file:
             if ": " in line:
                 key, value = line.split(": ", 1)
