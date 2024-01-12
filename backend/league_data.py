@@ -16,8 +16,9 @@ def get_player_puuid(user_settings):
     # get player and tag through settings
     player_name = user_settings["RiotId"].split("#")[0]
     player_tag = user_settings["RiotId"].split("#")[1]
+    server = "europe" if user_settings["Server"] != "NA" else "americas"
     api_key = user_settings["Riot Games API Key"]
-    url_to_puuid = (f"https://europe.api.riotgames.com/riot/account/v1/accounts/by-riot-id/{player_name}/{player_tag}?"
+    url_to_puuid = (f"https://{server}.api.riotgames.com/riot/account/v1/accounts/by-riot-id/{player_name}/{player_tag}?"
                     f"api_key={api_key}")
     try:
         resp = requests.get(url_to_puuid)
@@ -33,8 +34,14 @@ def create_player_base_data_dict(user_settings):
 
     api_key = user_settings["Riot Games API Key"]
     puuid = get_player_puuid(user_settings)
+    if user_settings["Server"] == "EUW":
+        server = "euw1"
+    elif user_settings["Server"] == "EUNE":
+        server = "eun1"
+    else:
+        server = "na1"
 
-    url_player_data = f"https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-puuid/{puuid}?api_key={api_key}"
+    url_player_data = f"https://{server}.api.riotgames.com/lol/summoner/v4/summoners/by-puuid/{puuid}?api_key={api_key}"
 
     try:
         resp = requests.get(url_player_data)
@@ -57,8 +64,8 @@ def get_recent_match_ids(puuid, user_settings):
     """ Returns recent match ids """
 
     api_key = user_settings["Riot Games API Key"]
-
-    match_id_url = (f"https://europe.api.riotgames.com/lol/match/v5/matches/by-puuid/{puuid}/ids?start=0&count=20"
+    server = "europe" if user_settings["Server"] != "NA" else "americas"
+    match_id_url = (f"https://{server}.api.riotgames.com/lol/match/v5/matches/by-puuid/{puuid}/ids?start=0&count=20"
                     f"&api_key={api_key}")
     try:
         resp = requests.get(match_id_url)
@@ -79,8 +86,9 @@ def get_recent_matches(match_ids, user_settings):
     This function does 20 API calls to the Riot Games API -> is only called ONCE in the program
     """
 
+    server = "europe" if user_settings["Server"] != "NA" else "americas"
     api_key = user_settings["Riot Games API Key"]
-    base_url_match_data = f"https://europe.api.riotgames.com/lol/match/v5/matches/"
+    base_url_match_data = f"https://{server}.api.riotgames.com/lol/match/v5/matches/"
 
     # if there was an error fetching the match_ids, return
     if not match_ids:
@@ -184,7 +192,13 @@ def get_player_rank_data(user_settings, player_base_data):
     api_key = user_settings["Riot Games API Key"]
     summoner_id = player_base_data["summoner_id"]
     queue_type = user_settings["Match Type"]
-    rank_url = f"https://euw1.api.riotgames.com/lol/league/v4/entries/by-summoner/{summoner_id}?api_key={api_key}"
+    if user_settings["Server"] == "EUW":
+        server = "euw1"
+    elif user_settings["Server"] == "EUNE":
+        server = "eun1"
+    else:
+        server = "na1"
+    rank_url = f"https://{server}.api.riotgames.com/lol/league/v4/entries/by-summoner/{summoner_id}?api_key={api_key}"
 
     try:
         resp = requests.get(rank_url)
