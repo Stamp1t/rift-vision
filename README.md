@@ -34,7 +34,7 @@ To get started with Rift Vision, please follow these steps:
    - You will need to use OBS as your streaming software.
 
 ## Getting Started
-Once you have installed OBSWebSocket, you should locate the WebSocket server settings within OBS under "Tools". Ensure that the "Enable WebSockets Server" option is checked. Then, remember your server port and set a password.
+Once you have installed OBSWebSocket, you should locate the WebSocket server settings(4.x Compat) within OBS under "Tools". Ensure that the "Enable WebSockets Server" option is checked. Then, remember your server port and set a password.
 
 After these settings are configured in OBS:
 
