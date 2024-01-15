@@ -1,7 +1,7 @@
 # Rift Vision
 
 ## Overview
-Welcome to **Rift Vision** – an automatically updating overlay designed for League of Legends streamers. This project aims to enhance the streaming experience by providing dynamic, real-time information directly within the streaming interface.
+Welcome to **Rift Vision** – an automatically updating overlay designed for League of Legends streamers. This project will improve your streaming quality by providing dynamic, real-time information about you League of Legends games.
 
 ![image](https://github.com/Stamp1t/rift-vision/assets/132808663/6376963c-6fcc-44e0-9ceb-38a840e523dd)
 
@@ -24,7 +24,7 @@ The program will reset the stats at 6AM.
 To get started with Rift Vision, please follow these steps:
 
 1. **Install OBSWebSocket:**
-   - First, you need to download and install OBSWebSocket. It's a crucial component that enables real-time communication between OBS Studio and Rift Vision. You can download it [here](https://github.com/obsproject/obs-websocket/releases).
+   - First, you need to download and install OBSWebSocket. It's a component that enables real-time communication between OBS Studio and Rift Vision. You can download it [here](https://github.com/obsproject/obs-websocket/releases). If you are using windows, use the "...Windows-Installer.exe"
 
 2. **Download Rift Vision:**
    - Next, download the Rift Vision application. You can download it [here](https://www.mediafire.com/file/26k4s2t33t7h1ng/Rift_Vision.zip/file)
