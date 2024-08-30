@@ -1,7 +1,7 @@
 # Rift Vision
 
 ## Overview
-Welcome to **Rift Vision** – an automatically updating overlay designed for League of Legends streamers. This project will improve your streaming quality by providing dynamic, real-time information about you League of Legends games.
+**Rift Vision** is an automatically updating overlay designed for League of Legends streamers.
 
 ![image](https://github.com/Stamp1t/rift-vision/assets/132808663/6376963c-6fcc-44e0-9ceb-38a840e523dd)
 
@@ -24,7 +24,7 @@ The program will reset the stats at 6AM.
 To get started with Rift Vision, please follow these steps:
 
 1. **Install OBSWebSocket:**
-   - First, you need to download and install OBSWebSocket. It's a component that enables real-time communication between OBS Studio and Rift Vision. You can download it [here](https://github.com/obsproject/obs-websocket/releases). If you are using windows, use the "...Windows-Installer.exe"
+   - First, you need to download and install OBSWebSocket. It's a component that enables communication between OBS Studio and Rift Vision. You can download it [here](https://github.com/obsproject/obs-websocket/releases). If you are using windows, use the "...Windows-Installer.exe"
 
 2. **Download Rift Vision:**
    - Next, download the Rift Vision application. You can download it [here](https://www.mediafire.com/file/26k4s2t33t7h1ng/Rift_Vision.zip/file)
@@ -53,8 +53,4 @@ After a few seconds, the overlay should be shown in OBS. You can adjust the size
 
 *IMPORTANT:* You should always wait about 30 seconds after renewing your API Key and not start the program immediately. Also keep in mind to renew your API Key every 24 Hours because the Program will not work if the Key is outdated.
 
-## Important Notice regarding Anti Virus Software
-When running the software, you may encounter a notification from your antivirus program indicating that the executable file (.exe) has been blocked. This is a common occurrence with executable files that have not been digitally signed.
-Antivirus programs are designed to protect your system from potentially harmful applications. Unsigned executable files often trigger a security alert because, without a valid digital signature, the antivirus cannot verify the publisher of the software. As a precaution, the antivirus may prevent the file from running. In this case you will need to manually allow the exe file in your AntiVirus software.  
-I assure you that this program contains absolutely no malware or other harmful elements. The associated code is also publicly accessible here.
 
